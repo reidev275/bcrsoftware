@@ -18,5 +18,5 @@
                     <li role="presentation"><a href="/support.php">Support</a></li>
                     <li role="presentation"><a href="/about.php">About</a></li>
                 </ul>
-                <img src="Content/logo.gif" alt="BCR Software" />
+                <a href="/"><img src="Content/logo.gif" alt="BCR Software" /></a>
             </div>
