@@ -8,14 +8,14 @@
         <p>BCR specializes in small to medium wholesale distribution companies, offering them features and functions large companies enjoy with much more costly software. And BCR gives clients something many software vendors don't - affordable support from people you know on a first name basis. Plus BCR is willing to enhance Titan to meet customer's needs without making them customized "orphans."</p>
         <p>So you are a larger distributor? No problem! Titan's client server database will handle hundreds of users.</p>    
     </div>
-        <div class="col-md-3">
+    <div class="col-md-3">
         <address>
-            <strong>Business Computer Resources, Inc.</strong><br>
-            413 Montbrook Ln.<br>
-            Knoxville, TN 37919<br>
-            <abbr title="Phone">P:</abbr> (866) 694-2007<br>
-            <abbr title="Fax">F:</abbr> (865) 694-2008<br>
-            <a href="mailto:BCRStaff@BCRSoftware.com">BCRStaff@BCRSoftware.com</a>
+            <strong><?php echo $name ?></strong><br>
+            <?php echo $address ?><br>
+            <?php echo $cityStateZip ?><br>
+            <abbr title="Phone">P:</abbr> <?php echo $phone ?><br>
+            <abbr title="Fax">F:</abbr> <?php echo $fax ?><br>
+            <a href="<?php echo $email ?>"><?php echo $email ?></a>
         </address>
     </div>
 </div>
