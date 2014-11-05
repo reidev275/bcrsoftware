@@ -31,8 +31,10 @@
 
 
         <script>
-            $('*').css("opacity", 0)
+            $('body').css("opacity", 0)
                 .animate({ opacity: 1 });
+            $('.shadow').css("opacity", 0.2);
+            
         </script>
     </body>
 </html>
