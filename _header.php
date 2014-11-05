@@ -5,6 +5,12 @@
     $phone = "(866) 694-2007";
     $fax = "(865) 694-2008";
     $email = "BCRStaff@BCRSoftware.com";
+
+    $title_links = array(
+        array("Applications", "/applications.php"),
+        array("Support", "/support.php"),
+        array("About", "/about.php")
+    );
 ?>
 
 <!DOCTYPE html>
@@ -18,31 +24,33 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 		<link href="Content/Site.css" rel="stylesheet" />
 	</head>
-    <body>
-       
-		    <nav class="navbar navbar-default navbar-static-top" role="navigation">
-			    <div class="container">
-				    <div class="navbar-header">
-					    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-					    <span class="sr-only">Toggle navigation</span>
-					    <span class="icon-bar"></span>
-					    <span class="icon-bar"></span>
-					    <span class="icon-bar"></span>
-					    </button>
-					    <a class="navbar-brand" href="/"><img alt="Brand" src="Content/logo.png"></a>
-				    </div>
+    <body>       
+		<nav class="navbar navbar-default navbar-static-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="/"><img alt="Brand" src="Content/logo.png"></a>
+                    <ul class="nav navbar-nav">
+                        <li><a href="/">BCR Software</a></li>
+                    </ul>
+                    
+				</div>
                    
 
-				    <div class="collapse navbar-collapse" id="navbar">
-					    <ul class="nav navbar-nav">
-                            <li><a href="/">BCR Software</a></li>
-                            <li><a href="/applications.php">Applications</a></li>
-                            <li><a href="/support.php">Support</a></li>
-                            <li><a href="/about.php">About</a></li>
-					    </ul>
-				    </div>
-			    </div>
-		    </nav>
+				<div class="collapse navbar-collapse" id="navbar">
+					<ul class="nav navbar-nav">
+                        <?php foreach ($title_links as $link) {
+                          echo "<li><a href='", $link[1], "'>", $link[0], "</a></li>";
+                        } ?>
+					</ul>
+				</div>
+			</div>
+		</nav>
          <div class="container">
 
             <!--<div class="header">
