@@ -28,21 +28,17 @@
 		<nav class="navbar navbar-default navbar-static-top" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 					</button>
-					<a class="navbar-brand" href="/"><img alt="Brand" src="Content/logo.png"></a>
-                    <ul class="nav navbar-nav">
-                        <li><a href="/">BCR Software</a></li>
-                    </ul>
-                    
+					<a class="navbar-brand" href="/"><img alt="Brand" src="Content/logo.png"></a>                  
+                    <a class="navbar-brand" style="padding: 15px 0 0 15px;" href="/"><span>BCR Software</span></a>
 				</div>
-                   
 
-				<div class="collapse navbar-collapse" id="navbar">
+				<div class="collapse navbar-collapse">
 					<ul class="nav navbar-nav">
                         <?php foreach ($title_links as $link) {
                           echo "<li><a href='", $link[1], "'>", $link[0], "</a></li>";
@@ -51,14 +47,4 @@
 				</div>
 			</div>
 		</nav>
-         <div class="container">
-
-            <!--<div class="header">
-                <ul class="nav nav-pills pull-right" role="tablist">
-                    <li role="presentation"><a href="/">Home</a></li>
-                    <li role="presentation"><a href="/applications.php">Applications</a></li>
-                    <li role="presentation"><a href="/support.php">Support</a></li>
-                    <li role="presentation"><a href="/about.php">About</a></li>
-                </ul>
-                <a href="/"><img src="Content/logo.gif" alt="BCR Software" /></a>
-            </div>-->
+        <div class="container">

@@ -41,8 +41,9 @@ h1, h2, h3, h4, h5 {
     font-family:  Georgia;
 }
 
-.logo {
-    position: absolute;
-    left:  49%;
-    top:  5px;
+.brand{
+    position:  relative;
+    display: block;
+    padding: 10px 15px;
+    line-height: 20px;
 }
