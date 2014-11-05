@@ -19,8 +19,8 @@
 		<link href="Content/Site.css" rel="stylesheet" />
 	</head>
     <body>
-        <div class="container">
-		    <nav class="navbar navbar-default" role="navigation">
+       
+		    <nav class="navbar navbar-default navbar-static-top" role="navigation">
 			    <div class="container">
 				    <div class="navbar-header">
 					    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
@@ -29,13 +29,13 @@
 					    <span class="icon-bar"></span>
 					    <span class="icon-bar"></span>
 					    </button>
-					    <a class="navbar-brand" href="/">
-                            <img alt="Brand" src="Content/logotext.png"> 
-                        </a>
+					    <a class="navbar-brand" href="/"><img alt="Brand" src="Content/logo.png"></a>
 				    </div>
+                   
+
 				    <div class="collapse navbar-collapse" id="navbar">
-					    <ul class="nav navbar-nav navbar-right">
-						    <li><a href="/">Home</a></li>
+					    <ul class="nav navbar-nav">
+                            <li><a href="/">BCR Software</a></li>
                             <li><a href="/applications.php">Applications</a></li>
                             <li><a href="/support.php">Support</a></li>
                             <li><a href="/about.php">About</a></li>
@@ -43,7 +43,7 @@
 				    </div>
 			    </div>
 		    </nav>
-        
+         <div class="container">
 
             <!--<div class="header">
                 <ul class="nav nav-pills pull-right" role="tablist">

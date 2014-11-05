@@ -4,7 +4,7 @@
 }
 
 body {
-    padding: 20px 0;
+    padding: 0 0 20px 0;
 }
 
 .footer {
@@ -13,7 +13,6 @@ body {
     color: #777;
     border-top: 1px solid #e5e5e5;
 }
-
 
 .navbar-brand {
     padding: 7px 0 0 15px;
@@ -28,7 +27,22 @@ body {
     border-color: #d16f1d
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
     background-color:  #d16f1d;
-    border-color: #d16f1d
+    border-color: #d16f1d;  
+}
+
+h1, h2, h3, h4, h5 {
+    text-shadow: 1px 1px 0 rgba(140,140,140,0.6), -1px -1px 0 #fff;
+    font-family:  Georgia;
+}
+
+.navbar {
+    font-family:  Georgia;
+}
+
+.logo {
+    position: absolute;
+    left:  49%;
+    top:  5px;
 }

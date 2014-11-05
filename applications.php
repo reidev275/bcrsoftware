@@ -1,6 +1,6 @@
 <?php include('_header.php');?>
 
-<h2>Titan Software - What can BCR Software do for you?</h2>
+<h1>What can Titan Software do for you?</h1>
 
 <div class="row">
     <div class="col-md-4">
