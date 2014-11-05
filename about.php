@@ -20,4 +20,10 @@
     </div>
 </div>
 
+
+
 <?php include('_footer.php');?>
+
+<script>
+    $("p").blur();
+</script>
